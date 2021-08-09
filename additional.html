@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0, user-scalable=no;" />
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<title>山大校园通</title>
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 2007 08:21:57 GMT">
+
+
+<script Language="javascript">
+  function zzjCallOneUrl(us){
+    document.getElementById("zzj_fun_426s").src=us;
+  }
+  var timeID=0;
+var tt1=600;
+tt2=0;
+tt3=0;
+var timeID=setInterval("hnceTimer()",1000);
+function hnceTimer(){
+  tt1--;
+  if (tt1>=0){
+  tt2=tt1 % 60;
+  tt3=(tt1-tt2)/60;
+  document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";
+  }else{document.getElementById("tim317").innerHTML="已作废";}
+}
+var t=new Date();
+var month=t.getMonth()+1;
+month = month<10?("0"+month):month;
+var day=t.getDate();
+day = day<10?("0"+day):day;
+var hour=t.getHours();
+hour = hour<10?("0"+hour):hour;
+var minute=t.getMinutes();
+minute = minute<10?("0"+minute):minute;
+function showTime()
+{
+        document.getElementById("showtime").innerHTML=month+"月"+day+"日 "+hour+":"+minute;
+}
+window.load = init();
+function init()
+{
+	hnceTimer();
+	showTime();
+}
+</script>
+</head>
+<body onload="init()">
+<form method="POST" name="myform52" action="">
+<div id="bak_0">  
+
+  <div style="width:100%;min-height:25px;line-height:25px;font-size:14px;color:#333;text-align:center;"><a href="./cdEast.html"><img src="./lx.jpg" style="width:410px;border:0px;" /></a></div>
+  
+</div>
+
+<div style="width:1px;height:1px;">
+  <iframe name="zzj_fun_426" id="zzj_fun_426s" src="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/getsomething?ptopid=s4C326961B76F485D8B4D42EBAAF8BC4A&sid=201106165611679799" marginwidth="0" marginheight="0" height="100%"
+    width="100%" scrolling="no" border="0" frameborder="0" allowtransparency="true"></iframe>
+</div>
+<!----<input type="hidden" name="ptopid" value="s4C326961B76F485D8B4D42EBAAF8BC4A"><input type="hidden" name="sid" value="201106165611679236"></form>---->
+
+<!----<form>
+	<p style="background-color:white;font-family:arial;color:red;font-size:80px;text-align:center">
+	<a href="./lzqEast.html" >东门</a><br/>
+	</p>
+</form> ---->
+<!----<div style="width:100%;height:50px;"><span style="color:#00a">这是一个测试！！！！！</span><br /></div>---->
+	
+	
+</body>
+</html>
